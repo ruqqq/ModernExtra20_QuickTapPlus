@@ -36,10 +36,10 @@
 		var sendWeatherFail = function() {
 			sendWeather({
 				"0": 8,
-				"1": "---\u00B0F",
+				"1": "---\u00B0C",
 				"2": "N/A",
 				"3": "N/A",
-				"4": "---\u00B0F"
+				"4": "---\u00B0C"
 			});
 		};
 
@@ -151,7 +151,7 @@
 							failed_attempts = 0;
 							sendWeather({
 								"0": weather.icon,
-								"1": roundTo(((1.8 * weather.temperature)+32), 1).toString() + "\u00B0F",
+								"1": roundTo(weather.temperature, 1).toString() + "\u00B0C",
 								"2": weather.city,
 								"3": weather.description,
 								"4": roundTo(weather.temperature,1).toString() + "\u00B0C"

@@ -540,7 +540,7 @@ static void qtp_sync_error_callback(DictionaryResult dict_error, AppMessageResul
 		APP_LOG(APP_LOG_LEVEL_DEBUG, "Not enough storage");
 	}
 
-	static char placeholder[] = "--\u00B0F";
+	static char placeholder[] = "--\u00B0C";
 	text_layer_set_text(qtp_temp_layer, placeholder);
 }
 
